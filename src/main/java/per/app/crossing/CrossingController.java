@@ -46,7 +46,7 @@ public class CrossingController {
 		} else if (travelerId != null ) {
 			events = crossingRepository.findByTravelerId(travelerId, pageable);
 		} else if (portOfEntryId != null) {
-			events = crossingRepository.findByPortEntryId(portOfEntryId, pageable);
+			events = crossingRepository.findByPortOfEntryId(portOfEntryId, pageable);
 		} else {
 			events = crossingRepository.findAll(pageable);
 		}

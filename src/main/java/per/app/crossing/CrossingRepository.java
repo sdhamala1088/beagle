@@ -8,7 +8,7 @@ public interface CrossingRepository extends JpaRepository<CrossingEvent, Long> {
 	
 	Page<CrossingEvent> findByTravelerId(Long travelerId, Pageable pageable);
 	
-	Page<CrossingEvent> findByPortEntryId(Long portId, Pageable pageable);
+	Page<CrossingEvent> findByPortOfEntryId(Long portId, Pageable pageable);
 	
 	Page<CrossingEvent> findByTravelerIdAndPortOfEntryId(Long travelerId, Long portOfEntryId, Pageable pageable);
 }
